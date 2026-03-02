@@ -28,8 +28,8 @@ Questions:
 */
 
 const task = () => {
-  // Your code goes here
-
+  console.log("Done")
 }
 
-task()
+let result = sleep(2000)
+result.then(task)

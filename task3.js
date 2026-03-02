@@ -18,8 +18,11 @@ import { sleep } from "./promises.js"
   
 */
 
-const task = () => {
-
+const task = async() => {
+  await sleep(2000)
+  console.log("Done")
 }
 
 task()
+
+console.log("NotDone")
