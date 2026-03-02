@@ -13,7 +13,11 @@ import { sleepTwoSecs } from "./promises.js";
 */
 
 const task = async () => {
+  await sleepTwoSecs()
+  console.log("Step 1")
 
+  await sleepTwoSecs()
+  console.log("Step 2")
 }
 
 task()

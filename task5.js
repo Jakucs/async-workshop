@@ -12,7 +12,8 @@ import { getRandomNumber } from "./promises.js";
 */
 
 const task = async () => {
-
+  let result = await getRandomNumber()
+  console.log(result)
 }
 
 task()

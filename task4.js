@@ -23,6 +23,7 @@ import { getRandomNumber } from "./promises.js";
 */
 
 const task = () => {
+  getRandomNumber().then(res=>console.log(res))
 
 }
 

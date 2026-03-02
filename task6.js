@@ -1,4 +1,4 @@
-import { sleepTwoSecs } from "./promises.js";
+import { sleep, sleepTwoSecs } from "./promises.js";
 
 /*
   - Create a function that waits 2 seconds, then logs "Step 1" to the console.
@@ -26,8 +26,17 @@ import { sleepTwoSecs } from "./promises.js";
       callback function?
 */
 
-const task = () => {
+function step1 () {
+  console.log("Step 1")
+}
 
+function step2 () {
+  console.log("Step 2")
+}
+
+const task = () => {
+  sleep(2000).then(step1)
+  sleep(4000).then(step2)
 }
 
 task()
