@@ -1,4 +1,4 @@
-import { sleep, getRandomNumber } from './promises'
+import { sleep, getRandomNumber } from './promises.js'
 
 /*
   - Create function that first generate a random number and logs it to the console.
@@ -14,8 +14,11 @@ import { sleep, getRandomNumber } from './promises'
 
 */
 
-const task = () => {
-
+const task = async() => {
+  let random = await getRandomNumber()
+  console.log(random)
+  await sleep(random+"000")
+  console.log("Done")
 }
 
 task()
