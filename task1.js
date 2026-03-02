@@ -17,7 +17,9 @@ Questions:
 */
 
 const task = () => {
-  // Your code goes here
+  setTimeout(() => {
+    console.log("Done")
+  }, 2000);
 }
-
+console.log("notDone")
 task()
